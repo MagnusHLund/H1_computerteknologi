@@ -1,0 +1,78 @@
+Hvad er en hypervisor? 
+En hypervisor kan forklares som en mellemmand, mellem fysisk computer og virtuel computer.
+For eksempel så er VirtualBox en hypervisor, hvor du kan oprette og arbejde på virtuelle maskiner.
+
+Hvorfor er et virtuelt miljø smart?
+Der er forøget sikkerhed, hvis nu du downloader noget shady eller lege med en virus.
+Man skal bare lige lave et virtuelt milijø, hvorefter man kan lave det man skal, uden at være bange for at det påvirker dit rigtige hardware.
+
+Hvorfor skal man slukke front usb på server?
+Man ville slukke front USB på sin server, for sikkerhed. 
+Hvis nu man satte et USB stik med malware på, så er det ikke så godt.
+
+Hvad er legacy boot?
+Legacy boot er den gamle boot måde. Den er 100% tekst baseret. Det betyder så at den ikke har GUI.
+Derudover fylder den meget mindre og har mindre indstillinger. For eksempel så kan man ikke se NVME på legacy bios.
+
+Hvad er UEFI?
+UEFI er den nye bios version, som udkom i 2006. Den har GUI og producenter kan selv vælge hvordan den skal se ud.
+Derudover fylder UEFI mere end legacy gør.
+
+Hvad er forskellen på legacy or UEFI?
+Legacy og UEFI er ikke opbevaret på samme type ROM. Legacy bruger normal ROM, hvor UEFI benytter sig af EEPROM.
+UEFI understøtter op til 9 ZB plads, hvor legacy kun kan understøtte 2,2TB.
+
+Hvad er forskellen på en hypervisor type 1 og 2?
+Type 1 er den mest sikre, af de 2 typer. 
+Det skyldes at type 1 er installeret på hardware, hvor at type 2 er installeret på et allerede eksisterne OS.
+Type 1 kaldes også få "bare metal" og type 2 kaldes "hosted hypervisor"
+
+Forskel på fixed og dynamic harddisk provision?
+Fixed bruger alt den plads som du giver din VM ved installation, lige meget om der er gemt data på eller ej. 
+Den er generalt hurtigere end dynamic. Fixed bruger ikke block allocation.
+Dynamic bruger kun den plads som der faktisk bliver brugt, af sin VM.
+
+Forskel på external, internal og privat i et hyperV miljø?
+External: lader din VM snakke med det externe netværk.
+Internal: lader din VM snakke med andre VMs og host, altså den har ikke adgang til internettet.
+Private: VMs kan kun snakke med andre VMs, ikke internettet og ikke host.
+
+Hvad forskel på thick og thin hardware provision?
+Thick er pre-allocated plads, til sin VM. Den har fast plads som den bruger, med det samme den er oprettet.
+Thin bruger kun den plads som der bliver brugt af din VM. 
+Den skal stadig have en max volume, på for eksempel 30GB, men selve filen med plads kan fylde 10GB, hvis der er 10GB værd af plads på det virtuelle drev.
+
+Hvad er port grupper? Hvad er en virtual switch?
+En Vswitch er en måde at få flere VMs til at kommunikere med hinanden.
+Man kan også bruge dem til at oprette forbindelse til internettet.
+Port grupper er en gruppe af netværksporte, ligesom der er porte på en rigtig switch.
+Man kan sætte grupper sammen i et VLAN, for at kontrollere data mellem forskellige grupper.
+
+Hvad gør VMware tools?
+VMware tools er nogle værktøjer som er i dit VMware program.
+De her værktøjer lader dig ændre forskellige indstillinger, som skærmopløsning, grafik og andet.
+
+Forskellen på MBR og GPT?
+MBR er det gamle format, for legacy bios. Det kan ikke have mere end 4 partitioner.
+GPT er det format som kom med UEFI. det kan have op til 128 partitoner.
+
+Forskel på NTFS, exfat og fat32?
+* NTFS (New Technology File System) udkom sammen med Windows NT og har siden været en standard for windows OS.
+  efter Windows server 2019 og Windows 10 version 1709, kan NTFS bruge op til 8PB, men ældre versioner kan bruge 256TB.
+* ExFAT (Extensible File Allocation Table) er optimeret til flash hukommelse, for USB drev og SD-kort. 
+  Det kan have op til 128 PB, i en volume.
+* FAT32 (File Allocation Table 32 bit) er standarden for USB drev, på under 32 GB. 
+  Den er ikke specielt god til store filer, da en fil maks kan være 4GB.
+  Det var det standard format, til MS-DOS.
+
+beskriv pfsense.
+PfSense er et firewall/router OS, som lader dig styre en masse forskellige indstillinger som routere og firewalls kan.
+Det er brugt meget i firmaer, for at optimere sikkerheden.
+
+Hvad er og gør sysprep?
+Sysprep (System preparation) fjerner unikke identifiers (SIDs), så din windows klon bliver generaliseret.
+Derudover kan man bruge det til at ændre i din windows klon, som for eksempel at tilføje drivers, eller andet software.
+
+Hvad er et snapshot og hvad bruges det til?
+Snapshots er et save point, som er godt at lave før man begynder at lege med sine indstillinger.
+Hvis nu noget går galt, eller man er utilfræs, så kan man gå tilbage til sit snapshot og de ændringer som der var lavet, er tilbage til den stand de var i.
