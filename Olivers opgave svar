@@ -1,0 +1,55 @@
+Hvad er en Hypervisor? 
+Software, der lader dig køre flere computere på en computer ved at administrere deres ressourcer.
+
+Hvorfor er Virtuelt miljø smart?
+Der er smart fordi, da det sparer plads, energi og gør det nemmere at håndtere flere computere på samme tid.
+
+Hvorfor skal man kunne slukke front USB på en server? 
+Forhindre uautoriseret brug af USB-enheder, der kan udgøre en trussel for serverens sikkerhed.
+
+Hvad betyder Legacy boot mode?
+Ældre måde at starte en computer op på ved hjælp af BIOS.
+
+Hvad betyder Uefi boot mode? 
+Moderne måde at starte en computer op på ved hjælp af UEFI-firmware, der er mere avanceret.
+
+Hvad er forskellen på de 2 boot modes?
+UEFI er hurtigere, mere avanceret og kan arbejde med større diske end Legacy.
+
+Hvad er forskellen på en Hypervisor type 1 og type 2? 
+Type 1 kører direkte på hardwaren og administrerer virtuelle maskiner direkte, mens type 2 kører som software inde i et eksisterende operativsystem.
+
+Forskellen på Fixed, Dynamic, harddisk provision
+Fixed allokerer al plads på forhånd, Dynamic tilpasser sig brugen, og Thin bruger kun faktisk brugt plads.
+
+Forskellen på External Internal og privat i et HyperV Miljø
+External tillader forbindelse til det eksterne netværk, Internal forbinder VM'er internt, og Private tillader kun forbindelse mellem VM'er på samme værtsmaskine.
+
+Forskellen på Thick Thin harddisk provision?
+Thick allokerer al plads på forhånd, Thin allokerer kun brugt plads, hvilket sparer plads, men kan have lidt ydeevneoverhead.
+
+Hvad kan portgrupper? hvad er en virtuel switch?
+Portgrupper styrer netværksindstillinger for virtuelle maskiner. En virtuel switch er som en netværksbryder til VM'er.
+
+Hvad gør VMware tools?
+Software, der gør VM'ens samarbejde med værtsmaskinen bedre ved at forbedre ydeevnen og integrationen.
+
+Forskellen på MBR og GPT
+MBR er gammel, understøtter op til 2 TB diske. GPT er ny, understøtter større diske og er mere fejltolerant.
+
+Forskellen på NTFS Exfat fat32 (gerne i tabelform)
+
+Filsystem	Maks. filstørrelse	Maks. partition	Sikkerhedsrettigheder	Platform
+NTFS	16 TB	256 TB	Ja	Windows
+exFAT	16 EB	16 EB	Nej	Flere
+FAT32	4 GB	2 TB	Nej	Flere
+
+Beskriv PFsense
+Gratis software, der laver din computer om til en kraftfuld firewall og router.
+
+Beskriv hvad Sysprep gør og hvilke funktioner det har
+Værktøj til at forberede en computer til distribution ved at fjerne unikke data og gøre den klar til at blive brugt andre steder.
+
+Beskriv hvad snapshot er og hvad man kan bruge det til
+Et øjebliksbillede af en virtuel maskine på et bestemt tidspunkt. Det bruges til backup, gendannelse eller testning.
+
